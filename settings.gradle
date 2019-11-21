@@ -1,0 +1,3 @@
+rootProject.name='dyno-project'
+
+include 'main-app'

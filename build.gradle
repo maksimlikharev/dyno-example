@@ -1,0 +1,34 @@
+buildscript {
+  repositories {
+    jcenter()
+  }
+}
+
+subprojects {
+  apply plugin: 'java'
+  apply plugin: 'eclipse'
+  apply plugin: 'idea'
+  apply plugin: 'checkstyle'
+
+  repositories {
+    jcenter()
+  }
+
+  checkstyle {
+    toolVersion = 8.23
+    maxWarnings = 0
+  }
+
+  eclipse {
+    classpath {
+      downloadSources = true
+    }
+  }
+
+  idea {
+    module {
+      jdkName = '1.8'
+      downloadSources = true
+    }
+  }
+}

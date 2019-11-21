@@ -1,0 +1,6 @@
+dynomite:
+  image: platform-docker.repo.clarivate.io/docker-dynomite:latest
+  ports:
+    - "8102:8102"
+    - "6379:6379"
+
